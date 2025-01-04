@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DenemeKupon.MainPage"
+             BackgroundColor="White">
+    <VerticalStackLayout Padding="20">
+        <Label Text="Kullanıcı Girişi" FontSize="24" HorizontalOptions="Center" />
+        <Entry x:Name="UsernameEntry" Placeholder="Kullanıcı Adı" />
+        <Entry x:Name="PasswordEntry" Placeholder="Şifre" IsPassword="True" />
+        <Button Text="Giriş Yap" Clicked="OnLoginClicked" BackgroundColor="#FF6200EE" TextColor="White" />
+        <Label x:Name="ErrorLabel" TextColor="Red" IsVisible="False" />
+    </VerticalStackLayout>
+</ContentPage>
